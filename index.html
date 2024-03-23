@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <div class="pl-1">
+    <h1 class="border-4 border-green-600">
+        Hello World!
+    </h1>
+    <h1 class="text-yellow-600 pl-1">
+        Hello World!
+    </h1> 
+   </div>
+   <div>
+       <p class="mb-1 pl-1 text-xs sm:text-base md-text-lg lg:text-lg">Hello long sentence </p>
+       <p class="mb-1 pl-1">Another long sentence</p>
+   </div>
+   <div>
+       <h1 class="text-3xl pl-1">Title 1</h1>
+       <h2 class="text-2xl pl-1">Title 2</h2>
+       <h3 class="text-xl pl-1">Title 3</h3>
+       <p class="text-base pl-1 uppercase leading-loose underline decoration-red-500 decoration-wavy decoration-1 underline-offset-4">A regular paragraph</p>
+       <p class="text-sm p-1">A description Paragraph</p>
+       <p class="text-xs note p-1">A little note</p>
+   </div>
+   <div>
+       <p class="break-all pl-1">This is a long sentence with a lot of words to explain that turuncate will pneumonoultramicroscopicsilicovolcanoconiosis truncate my sentence</p>
+   </div>
+   <div class="font-bold text-white bg-blue-500 m-4 py-1 px-1">
+      Hello
+   </div>
+   <div class="font-bold text-white bg-red-500 m-4 px-1 py-1">
+       box with margin
+   </div>
+   <div class="pl-1">
+      <h1 class="mb-2 text-2xl font-bold">This is my title</h1>
+      <p>This is my paragraph</p>
+   </div>
+   <div class="flex flex-col py-4 pl-2">
+       <div class="w-1/5 bg-red-500">Sidebar</div>
+       <div class="w-4/5 mt-2 bg-green-500">Main content</div>
+   </div>
+   <div class="pl-2">
+       <h1 class="mb-4 font-bold">First title</h1>
+       <h2 class="mb-3 font-bold">Second title</h2>
+       <h3 class="mb-2 font-bold">Third title</h3>
+       <p class="mb-1">paragraph</p> 
+   </div>
+   <div class="parent">
+       <div class="pl-2">Header</div>
+       <div class="flex pl-2">
+         <div class="grow">Main content</div>
+         <div class="flex flex-col">
+            <div>Sidebar</div>
+            <div>Menu</div>
+         </div> 
+       </div>
+   </div>
+
+   <div class="parent pl-2">
+    <div>Header</div>
+    <div class="flex">
+      <div class="basis-4/12">Sidebar</div>
+      <div class="basis-6/12">Main content</div>
+      <div class="basis-2/12">Another Sidebar</div>
+    </div>
+
+    <div class="parent pl-2">
+        <div>Header</div>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 bg-sky-500">Sidebar</div>
+          <div class="w-full bg-red-600">Main content</div>
+    </div>
+
+    <div class="parent">
+        <div>Header</div>
+        <div class="flex flex-col md:flex-row">
+            <div class="flex w-full flex-wrap">
+                <div class="w-32 grow">01</div>
+                <div class="w-32 grow">02</div>
+                <div class="w-32 grow">03</div>
+                <div class="w-32 grow">04</div>
+                <div class="w-32 grow">05</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parent pl-2">
+        <div>Header</div>
+        <div class="flex justify-evenly">
+          <div>Sidebar</div>
+          <div>Main content</div>
+          <div>Another sidebar</div>
+        </div>
+    </div>
+
+    <div class="parent pl-2">
+        <div>Header</div>
+        <div class="flex items-end justify-evenly">
+          <div>Sidebar</div>
+          <div>
+            <h1 class="font-bold">Main content</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestiae vel quos laudantium blanditiis ad, voluptatem mollitia aliquid vitae ducimus quia itaque alias
+            </p>
+          </div>
+          <div>Another sidebar</div>
+        </div>
+    </div>
+
+    <div>
+        <div>Header</div>
+        <div class="flex items-baseline mb-2">
+            <div class="pt-2 pb-6 bg-sky-500">01</div>
+            <div class="pt-8 pb-12 bg-red-600">02</div>
+            <div class="pt-12 pb-4 bg-green-500">03</div>
+        </div>
+    </div>
+
+    <div class="h-screen text-white parent bg-slate-900">
+        <div class="container max-auto">
+           <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+               <div class="p-6 rounded-lg bg-sky-500">1</div>
+               <div class="p-6 rounded-lg bg-sky-500">2</div>
+               <div class="p-6 rounded-lg bg-sky-500">3</div>
+               <div class="col-span-3 p-6 rounded-lg bg-red-500">4</div>
+               <div class="p-6 rounded-lg bg-sky-500">5</div>
+               <div class="p-6 rounded-lg bg-sky-500">6</div>
+           </div> 
+        </div>
+    </div>
+
+    <div class="h-screen text-whiteb parent bg-slate-900">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-6 gap-4">
+                <div class="col-span-4 col-start-2 p-6 bg-sky-500">01</div>
+                <div class="col-start-1 col-end-3 p-6 rounded-lg bg-sky-500">02</div>
+                <div class="col-span-2 col-end-7 p-6 rounded-lg bg-sky-500">03</div>
+                <div class="col-start-1 col-end-7 p-6 rounded-lg bg-sky-500">04</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-screen text-white parent bg-slate-900">
+        <div class="container mx-auto">
+            <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4">
+                <div class="p-6 col-span-2 rounded-lg bg-sky-500">01</div>
+                <div class="p-6 col-span-2 rounded-lg bg-sky-500">02</div>
+                <div class="p-6 rounded-lg bg-sky-500">03</div>
+                <div class="p-6 rounded-lg bg-sky-500">04</div>
+                <div class="p-6 rounded-lg bg-sky-500">05</div>
+                <div class="p-6 col-span-2 rounded-lg bg-sky-500">06</div>
+                <div class="p-6 rounded-lg bg-sky-500">07</div>
+                <div class="p-6 rounded-lg bg-sky-500">08</div>
+                <div class="p-6 rounded-lg bg-sky-500">09</div>
+                <div class="p-6 col-span-2 rounded-lg bg-sky-500">10</div>
+                <div class="p-6 rounded-lg bg-sky-500">11</div>
+                <div class="p-6 rounded-lg bg-sky-500">12</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-screen text-white parent bg-slate-900">
+        <div class="container mx-auto bg-red-500">
+            <h1>Hello</h1>
+        </div>
+    </div>
+
+    <div class="h-screen text-white parent bg-slate-900">
+        <div class="container mx-auto px-2 columns-lg">
+            <img class="w-64 float-left" src="Images/download.jpg">
+            <img class="w-42 float-end" src="Images/download.jpg">
+            <p class="clear-both">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit libero similique exercitationem doloribus incidunt perspiciatis nisi iure repellat. Illo quae cum possimus ducimus voluptas voluptates ipsam sint id tenetur accusamus!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fugiat voluptas consequuntur inventore libero voluptatem magni asperiores officia facere, assumenda commodi, earum eveniet harum facilis quae! Quidem dolores esse.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas optio esse laborum, repudiandae quis nisi, aliquid commodi exercitationem eos iusto, enim accusamus? Magnam earum amet cum, dignissimos perferendis blanditiis. Similique!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit libero similique exercitationem doloribus incidunt perspiciatis nisi iure repellat. Illo quae cum possimus ducimus voluptas voluptates ipsam sint id tenetur accusamus!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fugiat voluptas consequuntur inventore libero voluptatem magni asperiores officia facere, assumenda commodi, earum eveniet harum facilis quae! Quidem dolores esse.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas optio esse laborum, repudiandae quis nisi, aliquid commodi exercitationem eos iusto, enim accusamus? Magnam earum amet cum, dignissimos perferendis blanditiis. Similique!
+            </p>
+        </div>
+    </div>
+
+    <div class="h-screen text-white pt-12 p-2 parent bg-slate-900"> 
+        <div class="container px-2">
+            <div class="relative w-32 h-32 p-8 bg-red-500 rounded-lg">
+                <div class="absolute inset-2 w-24 h-24 bg-green-500 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-white bg-slate-900 parent h-screen">
+        <div class="container ">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-teal-500">01</div>
+                <div class="invisible bg-teal-500">02</div>
+                <div class="bg-teal-500">03</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent p-2">
+        <div class="container flex">
+            <div class="z-40 p-3 bg-red-500 border border-white rounded-full">
+                05
+            </div>
+            <div class="z-30 p-3 bg-red-500 border border-white rounded-full">
+                04
+            </div>
+            <div class="z-20 p-3 bg-red-500 border border-white rounded-full">
+                03
+            </div>
+            <div class="z-10 p-3 bg-red-500 border border-white rounded-full">
+                02
+            </div>
+            <div class="z-0 p-3 bg-red-500 border border-white rounded-full">
+                01
+            </div>    
+        </div>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent">
+        <div class="container mx-auto">
+            <img class="w-64 h-64 object-none object-left-bottom"
+             src="Images/download.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent p-2">
+        <header class="w-full border-b border-l-8 border-t-4 py-4">Header</header>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent">
+        <div class="divide-y divide-red-500">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+        </div>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent">
+        <div class="container mx-auto">
+            <input type="text" class="border-2 text-white outline-none border-double border-rose-600">
+        </div>
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent p-2">
+      <div class="grid grid-cols-3 divide-x divide-red-500 divide-dashed">
+         <div>01</div>
+         <div>02</div>
+         <div>03</div>
+      </div>  
+    </div>
+
+    <div class="h-screen text-white bg-slate-900 parent p-2">
+        <button class="ring-offset-2 ring-4">Button C</button>
+    </div>
+
+    <div class="h-screen p-4 parent">
+        <div class="inline-block p-4 text-black bg-white border rounded-lg shadow-md">
+            <img class="w-24 mb-4 skew-y-12" src="Images/download.jpg" alt="">
+            <h1>Hello</h1>
+            <p class="mb-4">This is my div</p>
+            <button class="px-3 py-2 rounded-lg transition delay-1000 hover:translate-y-4 duration-1000 cursor-pointer bg-cyan-500 shadow-md shadow-cyan-500/50 text-white">Say Hello</button>
+        </div>
+    </div>
+
+    <div class="pb-8">
+        <h1 class="text-3xl font-bold mb-2">This is a title</h1>
+        <h2 class="mb-1 text-xl font-semibold">This is a subtitle</h2>
+        <p class="text-base">This is a paragraph</p>
+        <a class="underline text-blue-600 hover:text-purple-500 transition decoration-wavy underline-offset-1" href="https://freecodecamp.org">This is a an anchor</a>
+        <div class="my-4 text-white">
+            <button class=" hover:bg-blue-500 transition duration-300 bg-blue-600 px-3 py-2 rounded-lg">This is a primary button</button>
+        </div>
+        <div class="my-4 text-white">
+            <button class="hove:transition hover:duration-300 hover:opacity-80 bg-slate-800 px-3 py-2 rounded-lg">This is a secondary button</button>
+        </div>
+        <div class="my-4 disabled:bg-slate-400">
+            <button class="px-3 py-2 rounded-lg bg-slate-400/30 hover:disabled:opacity-100">Thi is disabled button</button>
+        </div>
+        <div>
+            <input class="placeholder:italic text-slate-500 mb-1 border border-slate-300 rounded-sm p-1 py-1 outline-none" type="text" placeholder="E-mail">
+        </div>
+        <div>
+            <input disabled class=" placeholder:italic mb-1 border border-slate-300 disabled:bg-slate-200 rounded-sm p-1 py-1 outline-none" type="text" placeholder="E-mail">
+        </div>
+        <input class=" mb-1 border border-slate-300 rounded-sm p-1 py-1 outline-none" type="date">
+        <div class="flex items-start my-4">
+            <input class="p-2 mr-1 mb-0 mt-0.5 accent-purple-500" type="checkbox" id="checkbox">
+            <label class="text-sm  font-medium text-slate-700 leading-4" for="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam laborum quisquam, nesciunt earum a eum doloribus sed quas harum doloremque asperiores debitis laudantium, est provident odio neque qui soluta.
+
+            </label>
+        </div>
+        <div>
+            <select class="pr-8 mb-1 border text-slate-500 border-slate-300 rounded-sm p-1 py-1 outline-none">
+                <option>0ption 1</option>
+                <option>0ption 2</option>
+            </select>
+        </div>
+        <div class="inline-block cursor-pointer bg-slate-100 transition pr-8 mb-1 border text-slate-500 border-slate-300 rounded-sm px-2 py-1 outline-none">
+            <div class="px-2 py-1 border border-slate-300 pr-8">
+                Select option 
+            </div>
+            <div>
+                <ul class="flex flex-col divide-y">
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
